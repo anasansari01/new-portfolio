@@ -6,6 +6,7 @@ import { Nunito, PT_Sans } from "next/font/google";
 import { ReactLenis } from "@/lib/lenis";
 import "./globals.css";
 import { NavbarProvider } from "@/components/header/HeaderContext";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Optimize font loading with display swap and preload
 const nunito = Nunito({
@@ -53,6 +54,7 @@ export default function RootLayout({
             <Header />
             <Toaster />
             {children}
+            <SpeedInsights />
             <Analytics />
           </NavbarProvider>
         </body>
