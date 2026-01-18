@@ -6,6 +6,8 @@ import bookStore from "@/../public/projects/bookStore.png";
 import eshop from "@/../public/projects/eshop.png";
 import fitnessTracker from "@/../public/projects/fitnessTracker.png";
 import chessGame from "@/../public/projects/chessGame.png";
+import geminiClone from "@/../public/projects/geminiClone.png";
+import issueTracker from "@/../public/projects/issueTracker.png";
 
 export interface ProjectInterface {
     title: string;
@@ -58,6 +60,24 @@ export const PROJECTS: ProjectInterface[] = [
         github: "https://github.com/anasansari01/fitness-tracker",
         // status: "Website",
         technologies: ["React", "Node.js", "Express.js", "MongoDB", "REST API", "JWT Authentication"]
+    },
+    {
+        title: "Gemini Clone",
+        img: geminiClone,
+        description: "A React + Vite-based web app intended to replicate the core chat interface and interaction experience of the Google Gemini AI platform.",
+        longDescription: "Built with React and Vite, this project sets up a frontend that mimics the conversational layout and responsive UI of Gemini. It includes a structured component architecture with basic chat functionality, modern JavaScript workflows, and a starter template for integrating API-driven responses. While it doesn’t yet include an official backend or live Gemini API integration, it provides the scaffold for building a conversational UI and experimenting with AI integrations. Designed for learning and extension using current frontend tooling.",
+        deployedLink: "",
+        github: "https://github.com/anasansari01/gemini-clone",
+        technologies: ["React", "Vite", "JavaScript", "HTML", "CSS"]
+    },
+    {
+        title: "Issue Tracker",
+        img: issueTracker,
+        description: "A full-stack issue tracking web application built with Next.js and Prisma to manage, create, and visualize issues and tickets.",
+        longDescription: "Developed a modern issue tracking system using Next.js for server-side rendering and React-based frontend views. Structured the backend with Prisma ORM and database schemas to support efficient issue creation, updates, and relational data handling. Designed the UI with responsive layouts and intuitive navigation for users to easily log and monitor issues, featuring type safety with TypeScript and Tailwind CSS for styling. Built as a scalable foundation for collaborative project management workflows and extensible issue lifecycle features.",
+        deployedLink: "https://issue-tracker-help.vercel.app/",
+        github: "https://github.com/anasansari01/issue-tracker",
+        technologies: ["Next.js", "React", "TypeScript", "Prisma", "Tailwind CSS", "Vercel"]
     },
     {
         title: "Book Store",
