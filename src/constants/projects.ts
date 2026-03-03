@@ -3,11 +3,12 @@ import { StaticImageData } from "next/image";
 import memories from "@/../public/projects/memories.png";
 import nextLib from "@/../public/projects/nextLib.png";
 import bookStore from "@/../public/projects/bookStore.png";
-import eshop from "@/../public/projects/eshop.png";
+import eShop from "@/../public/projects/eShop.png";
 import fitnessTracker from "@/../public/projects/fitnessTracker.png";
 import chessGame from "@/../public/projects/chessGame.png";
 import geminiClone from "@/../public/projects/geminiClone.png";
 import issueTracker from "@/../public/projects/issueTracker.png";
+import oneMinuteAI from "@/../public/projects/oneMinute.png";
 
 export interface ProjectInterface {
     title: string;
@@ -22,13 +23,25 @@ export interface ProjectInterface {
 
 export const PROJECTS: ProjectInterface[] = [
     {
+        title: "oneMinute-AI",
+        img: oneMinuteAI,
+        description: "An AI-powered documentation assistant built with a Retrieval-Augmented Generation (RAG) architecture to deliver fast, context-aware, and empathetic answers from custom knowledge bases.",
+        longDescription: "oneMinute-AI is a full-stack AI assistant built with a Retrieval-Augmented Generation (RAG) pipeline to deliver accurate, context-aware responses from user documentation. It ingests documents, converts them into vector embeddings, performs semantic similarity search, and generates grounded responses using an LLM.\n\nBuilt with Next.js, TypeScript, and Drizzle ORM, the project features a modular architecture, chat-based UI, and scalable backend design, demonstrating practical implementation of RAG, vector search, and production-ready LLM integration.",
+        deployedLink: "",
+        github: "https://github.com/anasansari01/oneMinute-AI",
+        // status: "Active Development",
+        technologies: [
+            "Next.js", "TypeScript", "Node.js", "Drizzle ORM", "RAG", "OpenAI API", "PostgreSQL",
+        ],
+    },
+    {
         title: "eShop",
-        img: eshop,
+        img: eShop,
         description: "A scalable full-stack e-commerce platform with an Nx monorepo architecture, featuring robust authentication, reusable modules, and high-performance backend services.",
         longDescription: "Architected an enterprise-ready, scalable full-stack e-commerce platform using Nx monorepo with shared TypeScript libraries. Engineered RESTful APIs with Express and Prisma while leveraging PostgreSQL for structured relational data management. Implemented secure JWT authentication with refresh tokens, product variations, and checkout workflows for a seamless experience. Containerized services with Docker and introduced CI/CD pipelines for automated builds, testing, and deployment. Designed a modern and responsive frontend to ensure polished UX with dynamic routing, real-time state sync, and accessibility considerations.",
-        deployedLink: "#",
+        deployedLink: "",
         github: "https://github.com/anasansari01/eshop",
-        status: "In Development",
+        // status: "In Development",
         technologies: ["Next.js", "Node.js", "Express", "Prisma", "PostgreSQL", "TypeScript", "Docker",]
     },
     {
@@ -48,7 +61,7 @@ export const PROJECTS: ProjectInterface[] = [
         longDescription: "Built a complete social media style application enabling users to upload text and image-based posts, interact with memory entries, and securely authenticate using Google OAuth. Implemented Redux Toolkit for reliable state management. Built secure RESTful APIs using Express and integrated MongoDB with indexing for fast search and filter operations. The app supports full CRUD operations, media uploads, protected routes, and role-based content permissions. The UI is built with a responsive Material-UI design system for clean visuals and engaging usability. Deployed backend on Render and frontend on Netlify to enable production accessibility.",
         deployedLink: "https://shivalik-memories.netlify.app/posts",
         github: "https://github.com/anasansari01/Memories",
-        status: "Website",
+        // status: "Website",
         technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Material-UI"]
     },
     {
