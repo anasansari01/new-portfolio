@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 import memories from "@/../public/projects/memories.png";
 import nextLib from "@/../public/projects/nextLib.png";
 import bookStore from "@/../public/projects/bookStore.png";
-import eShop from "@/../public/projects/eShop.png";
+import eShop from "@/../public/projects/eshop.png";
 import fitnessTracker from "@/../public/projects/fitnessTracker.png";
 import chessGame from "@/../public/projects/chessGame.png";
 import geminiClone from "@/../public/projects/geminiClone.png";
