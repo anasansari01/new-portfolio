@@ -27,7 +27,7 @@ export const PROJECTS: ProjectInterface[] = [
         img: oneMinuteAI,
         description: "An AI-powered documentation assistant built with a Retrieval-Augmented Generation (RAG) architecture to deliver fast, context-aware, and empathetic answers from custom knowledge bases.",
         longDescription: "oneMinute-AI is a full-stack AI assistant built with a Retrieval-Augmented Generation (RAG) pipeline to deliver accurate, context-aware responses from user documentation. It ingests documents, converts them into vector embeddings, performs semantic similarity search, and generates grounded responses using an LLM.\n\nBuilt with Next.js, TypeScript, and Drizzle ORM, the project features a modular architecture, chat-based UI, and scalable backend design, demonstrating practical implementation of RAG, vector search, and production-ready LLM integration.",
-        deployedLink: "",
+        deployedLink: "https://one-minute-ai.vercel.app/",
         github: "https://github.com/anasansari01/oneMinute-AI",
         // status: "Active Development",
         technologies: [
