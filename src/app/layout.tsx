@@ -7,6 +7,7 @@ import { ReactLenis } from "@/lib/lenis";
 import "./globals.css";
 import { NavbarProvider } from "@/components/header/HeaderContext";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script";
 
 // Optimize font loading with display swap and preload
 const nunito = Nunito({
@@ -50,6 +51,11 @@ export default function RootLayout({
       <ReactLenis root>
         <body>
           <div className="texture" />
+          <Script
+            src="https://one-minute-ai.vercel.app/widget.js"
+            data-id={process.env.CHATBOT_DATA_ID!}
+            defer
+          />
           <NavbarProvider>
             <Header />
             <Toaster />
